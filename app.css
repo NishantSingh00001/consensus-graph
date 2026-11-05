@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+:root{
+  --bg:#080a12;--bg2:#0c0f1b;--panel:rgba(18,22,38,.55);--panelsolid:#0e1220;--panel2:#141a2e;
+  --ink:#eef0fb;--ink2:#c3c8e4;--mut:#878db0;--dim:#565c7e;--hair:#a78bfa1f;--hair2:#a78bfa0e;--glassbrd:#a78bfa40;
+  --acc:#a78bfa;--acc2:#5ad1ff;--amb:#ffcf6b;--grn:#55e0a0;--rose:#ff6f8f;--onacc:#0a0a1a;
+  --disp:'Space Grotesk',system-ui,sans-serif;--serif:'Spectral',Georgia,serif;--sans:'Inter',system-ui,sans-serif;--mono:'IBM Plex Mono',ui-monospace,monospace;
+  --emstyle:italic;--emw:400;--emfont:var(--serif);--r:12px;--r2:18px;--sp:.35s;--mkradius:9px;
+}
+:root[data-theme="light"]{--bg:#f3f3fb;--bg2:#e9e9f6;--panel:rgba(255,255,255,.66);--panelsolid:#fff;--panel2:#eeeefa;--ink:#141627;--ink2:#3c3f5c;--mut:#646a8a;--dim:#a2a6c2;--hair:#5a3ad019;--hair2:#5a3ad00c;--glassbrd:#5a3ad040;--onacc:#0a0a1a}
+.hero2 h1 em,.phead h1 em,.cta2-in h2 em{font-family:var(--serif)}
+.claim{background:var(--panel2);border:1px solid var(--hair);border-radius:14px;padding:16px 18px;margin-bottom:12px;position:relative}
+.claim .src{font-family:var(--mono);font-size:11px;color:var(--acc2);margin-bottom:6px}
+.claim .txt{line-height:1.55}
+.claim .rm{position:absolute;top:14px;right:14px;color:var(--dim);cursor:pointer}.claim .rm:hover{color:var(--rose)}
+.graphwrap{position:relative;border-radius:var(--r2);background:var(--panel2);border:1px solid var(--hair);overflow:hidden}
+#graph{display:block;width:100%;height:520px}
+.gtip{position:absolute;pointer-events:none;background:var(--panelsolid);border:1px solid var(--glassbrd);border-radius:10px;padding:10px 12px;font-size:12.5px;max-width:260px;opacity:0;transition:opacity .2s;box-shadow:0 20px 40px -16px #000;z-index:5}
+.verdict{display:inline-flex;align-items:center;gap:7px;font-family:var(--mono);font-size:11px;padding:3px 9px;border-radius:999px;text-transform:uppercase;letter-spacing:.05em}
+.verdict.support{background:color-mix(in srgb,var(--grn) 18%,transparent);color:var(--grn)}
+.verdict.contradict{background:color-mix(in srgb,var(--rose) 18%,transparent);color:var(--rose)}
+.verdict.related{background:color-mix(in srgb,var(--acc2) 18%,transparent);color:var(--acc2)}
+.legend{display:flex;gap:18px;flex-wrap:wrap;font-family:var(--mono);font-size:11px;color:var(--mut)}
+.legend i{display:inline-block;width:18px;height:3px;border-radius:2px;margin-right:6px;vertical-align:3px}

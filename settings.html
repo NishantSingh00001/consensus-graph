@@ -1,0 +1,16 @@
+<!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>ConsensusGraph — Settings</title><meta name="description" content="Theme, accent, AI key and data.">
+<link rel="stylesheet" href="core.css"><link rel="stylesheet" href="app.css"></head><body><div id="topbar"></div>
+<main class="shell"><div class="page">
+  <section class="phead" style="padding-bottom:24px"><div class="eyebrow">Preferences</div><h1><em>Settings</em>.</h1></section>
+  <div class="grid2 even">
+    <div class="col"><section class="card reveal"><div class="ch"><h2>Appearance</h2></div>
+      <div class="setrow"><div><div class="si">Theme</div><div class="sd">Dark or light.</div></div><button class="toggle" id="themeToggle"></button></div>
+      <div class="setrow"><div><div class="si">Accent</div><div class="sd">Recolors the UI and the 3D graph.</div></div><div class="accents" id="accents2"></div></div>
+    </section></div>
+    <div class="col"><section class="card reveal"><div class="ch"><h2>AI & data</h2></div>
+      <div class="setrow"><div><div class="si">Gemini key</div><div class="sd">Refine verdicts & summaries with an LLM.</div></div><button class="ghost" id="keyBtn" data-press>Set key</button></div>
+      <div class="setrow"><div><div class="si">Export</div><div class="sd">Claims & analysis as JSON.</div></div><button class="ghost" id="exp" data-press>Export</button></div>
+    </section></div>
+  </div>
+  <section class="card reveal" style="margin-top:22px"><div class="ch"><h2>About & features</h2></div><div style="padding:20px"><p style="color:var(--ink2);line-height:1.7;margin-bottom:12px">ConsensusGraph detects agreement and contradiction between research claims using a transparent heuristic — topic overlap (Jaccard) plus polarity and negation — and visualizes it as a force-directed graph. Optional Gemini refinement uses your own key. Nothing is uploaded.</p><div class="feat" id="featlist" style="text-align:left;margin:0"></div></div></section>
+</div></main><script src="three.min.js"></script><script src="app.js"></script><script src="core.js"></script></body></html>

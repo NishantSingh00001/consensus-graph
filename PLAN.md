@@ -1,0 +1,2 @@
+# ConsensusGraph — Plan
+Scientific contradiction detection. Pages: Home (3D graph hero), Claims (library), Graph (physics force-graph of support/contradict/related), Analysis (pairwise verdict table + consensus summary + AI refine), Settings. Offline heuristic (Jaccard topic overlap + polarity + negation); Gemini optional. Identity: academic ink, Spectral serif accents, violet/cyan. 3D hero: graph globe.

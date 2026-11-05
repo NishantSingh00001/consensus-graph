@@ -1,0 +1,14 @@
+<!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>ConsensusGraph — Claims</title><meta name="description" content="Collect research claims with their sources into one library.">
+<link rel="stylesheet" href="core.css"><link rel="stylesheet" href="app.css"></head><body><div id="topbar"></div>
+<main class="shell"><div class="page">
+  <section class="phead" style="padding-bottom:24px"><div class="eyebrow">Claim library</div><h1>Gather the <em>evidence</em>.</h1></section>
+  <div class="grid2">
+    <div class="col"><section class="card reveal"><div class="ch"><h2>Add a claim</h2></div><div style="padding:20px">
+      <div class="fld" style="margin-top:0"><label>Claim</label><textarea class="ta" id="ct" style="min-height:120px" placeholder="e.g. Moderate coffee reduces the risk of type 2 diabetes."></textarea></div>
+      <div class="fld"><label>Source (optional)</label><input class="inp" id="cs" placeholder="Author, year / journal"></div>
+      <button class="save" data-press id="add" style="margin-top:16px">Add claim</button>
+      <div class="row" style="margin-top:12px"><button class="btn" id="sample" data-press>Load sample set</button><button class="btn" id="clear" data-press>Clear all</button></div>
+    </div></section></div>
+    <div class="col"><section class="card reveal"><div class="ch"><h2>Claims</h2><span class="k" id="cnt"></span></div><div style="padding:18px" id="list"></div></section></div>
+  </div>
+</div></main><script src="three.min.js"></script><script src="app.js"></script><script src="core.js"></script></body></html>

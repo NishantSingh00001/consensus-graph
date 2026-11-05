@@ -1,0 +1,9 @@
+<!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>ConsensusGraph — Graph</title><meta name="description" content="An interactive, physics-driven graph of how your claims agree and contradict.">
+<link rel="stylesheet" href="core.css"><link rel="stylesheet" href="app.css"></head><body><div id="topbar"></div>
+<main class="shell"><div class="page">
+  <section class="phead" style="padding-bottom:24px"><div class="eyebrow">Consensus graph</div><h1>The <em>shape</em> of agreement.</h1></section>
+  <section class="bigstats" id="gstats"></section>
+  <section class="card reveal"><div class="ch"><h2>Claim network</h2><span class="k legend"><span><i style="background:#55e0a0"></i>Agree</span><span><i style="background:#ff6f8f"></i>Conflict</span><span><i style="background:#5ad1ff"></i>Related</span></span></div>
+    <div style="padding:16px"><div class="graphwrap" id="graphwrap"><canvas id="graph"></canvas><div class="gtip" id="gtip"></div></div><div style="color:var(--mut);font-family:var(--mono);font-size:11px;margin-top:10px">Hover a node to read the claim. The layout settles by force simulation.</div></div>
+  </section>
+</div></main><script src="three.min.js"></script><script src="app.js"></script><script src="core.js"></script></body></html>

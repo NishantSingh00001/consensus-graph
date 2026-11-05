@@ -1,0 +1,7 @@
+<!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>ConsensusGraph — Analysis</title><meta name="description" content="A transparent pairwise verdict table with optional AI-refined consensus summary.">
+<link rel="stylesheet" href="core.css"><link rel="stylesheet" href="app.css"></head><body><div id="topbar"></div>
+<main class="shell"><div class="page">
+  <section class="phead" style="padding-bottom:24px"><div class="eyebrow">Pairwise analysis</div><h1>Read the <em>verdicts</em>.</h1></section>
+  <section class="card reveal" style="margin-bottom:22px"><div class="ch"><h2>Consensus summary</h2><span class="k"><button class="btn" id="aiBtn" data-press>Refine with AI</button></span></div><div style="padding:22px"><p id="summary" style="line-height:1.7;color:var(--ink2)"></p></div></section>
+  <section class="card reveal"><div class="ch"><h2>Claim pairs</h2><span class="k">overlap ≥ 14%</span></div><div style="padding:14px;overflow-x:auto" id="tbl"></div></section>
+</div></main><script src="three.min.js"></script><script src="app.js"></script><script src="core.js"></script></body></html>
